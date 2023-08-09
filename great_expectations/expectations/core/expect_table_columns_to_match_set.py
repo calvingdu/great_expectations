@@ -45,7 +45,7 @@ class ExpectTableColumnsToMatchSet(BatchExpectation):
         column_set (list of str): \
             The column names, in any order.
         exact_match (boolean): \
-            Whether the list of columns must exactly match the observed columns.
+            If True, the list of columns must exactly match the observed columns. If False, ensures all columns in column_set are in the table but also allows for additional columns.
 
     Other Parameters:
         result_format (str or None): \
